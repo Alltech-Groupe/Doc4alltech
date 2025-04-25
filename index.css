@@ -6,9 +6,9 @@
 
 body {
   margin: 0;
-  background-color: #e2e2e2;
-  --blue: #a20079;
-  font-family: "open-sans", sans-serif;
+  background-color: #fcfcfc;
+  --blue: #1d425b;
+  font-family: "roboto", sans-serif;
   min-width: 740px;
 }
 body header {
@@ -17,7 +17,7 @@ body header {
   justify-content: center;
   background-color: var(--blue);
   height: 108px;
-  text-transform: uppercase;
+  text-transform: none;
   font-size: 2em;
   color: white;
   position: fixed;
