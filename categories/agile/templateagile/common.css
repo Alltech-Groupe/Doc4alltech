@@ -147,7 +147,7 @@
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     background-color: white;
-    -webkit-print-color-adjust: exact;
+    --print-color-adjust: economy;
   }
   body #showPreview {
     display: none;
