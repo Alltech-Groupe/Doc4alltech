@@ -144,7 +144,7 @@
     --lightgrey: #eeeef0;
     min-width: 740px;
     margin: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "roboto", sans-serif;
     font-size: 14px;
     background-color: white;
     --print-color-adjust: economy;
