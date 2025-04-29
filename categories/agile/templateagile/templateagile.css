@@ -1,30 +1,47 @@
-/* put your all custom css rules here */
-/* you must not change other scss files */
-@media print {
-  .landscape {
-    transform: rotate(90deg) translateX(164px) translateY(164px);
-    width: 29.7cm;
-    height: 21cm;
-  }
-}
 body {
-  --currentColor: var("--orange"); /*color of your choice, check line 137 from commons.css*/
+  background-color: #f0f8ff;
+  font-family: 'roboto', sans-serif;
+  color: #333;
+  margin: 40px;
 }
-body #showPreview:checked ~ .reverse .landscape {
-  transform: rotate(90deg) translateX(164px) translateY(164px);
-  width: 29.7cm;
-  height: 21cm;
+
+.title{
+color:white;
 }
-body .reverse header {
-  height: 15px;
+  
+h1 {
+  color: #8d7034;
+  font-size: 2.5em;
 }
-body .reverse main {
-  height: 708px;
+
+h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
 }
-body .reverse main img.sketchnote {
-  height: 100%;
-  width: auto;
-  padding: 1px;
-  margin: 0px auto;
-  display: block;
+p {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1em;
+  white-space: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  gap: 20px; /* space between columns */
+  padding: 20px;
+}
+
+.column {
+  flex: 1; /* equal width */
+  background-color: white;
+  padding: 20px;
+  border: 1px solid white;
 }
