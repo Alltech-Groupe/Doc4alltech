@@ -37,6 +37,9 @@ body .img-item img {
 body .title {
   margin: 5px 0 0 0;
 }
+body .sub-title{
+  font-size: 0.7em;
+}
 body main {
   display: flex;
   flex-wrap: wrap;
@@ -47,6 +50,9 @@ body main {
 body main section {
   width: 100%;
   text-align: center;
+}
+body main section .container#menuIcone {
+  flex-direction: row;
 }
 body main section h1 {
   padding: 5px;
