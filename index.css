@@ -1,3 +1,19 @@
+@font-face {
+  font-family: Quicksand;
+  font-weight: normal;
+  src: url(ressources\polices\Quicksand-Regular.ttf);
+}
+@font-face {
+  font-family: Quicksand;
+  font-weight: lighter;
+  src: url(ressources\polices\Quicksand-Light.ttf);
+}
+@font-face {
+  font-family: Quicksand;
+  font-weight: bold;
+  src: url(ressources\polices\Quicksand-Bold.ttf);
+}
+
 *,
 *:before,
 *:after {
@@ -7,15 +23,19 @@
 body {
   margin: 0;
   background-color: #fcfcfc;
-  --blue: #1d425b;
-  font-family: "roboto", sans-serif;
+  --alltechDarkBlue: #0A1659;
+  --alltechLightBlue: #00399B;
+  --alltechDarkGold: #8D7034;
+  --alltechLightGold: #BC944A;
+  --alltechPink: #BC3B64;
+  font-family: "Quicksand", sans-serif;
   min-width: 740px;
 }
 body header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--blue);
+  background-color: var(--alltechDarkBlue);
   height: 108px;
   text-transform: none;
   font-size: 2em;
@@ -36,9 +56,21 @@ body .img-item img {
 }
 body .title {
   margin: 5px 0 0 0;
+  color: var(--alltechLightGold);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+body .title p {
+  margin: 0; /* enlève les marges par défaut des <p> */
+  line-height: 1.2; /* contrôle l'espacement vertical du texte */
 }
 body .sub-title{
   font-size: 0.7em;
+  color: var(--alltechDarkGold);
 }
 body main {
   display: flex;
@@ -74,7 +106,7 @@ body main section .container {
 }
 body main section .container .item {
     margin: 0.3em;
-    background-color: var(--blue); /* Utilise ta couleur principale */
+    background-color: var(--alltechDarkBlue); /* Utilise ta couleur principale */
     padding: 1em;
     font-weight: bold;
     border-radius: 5px;
@@ -85,7 +117,7 @@ body main section .container .item {
     text-align: center;
 }
 body main section .container .item:hover {
-    background-color: #65004e; /* Couleur plus sombre au survol */
+    background-color: var(--alltechLightBlue); /* Couleur plus claire au survol */
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 body main section .container .item img {
@@ -104,7 +136,7 @@ body main section .container .item div {
   text-align: center;
 }
 body footer {
-  background-color: var(--blue);
+  background-color: var(--alltechDarkBlue);
   height: 80px;
   display: flex;
   align-items: center;
