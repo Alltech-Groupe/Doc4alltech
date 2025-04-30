@@ -1,46 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
-  <title>Documentation Alltech Consulting</title>
+  <title>PepITs Starter Pack - Alltech Consulting</title>
   <link rel="stylesheet" href="index.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Droid+Sans:700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
-  <header>Documentation par Alltech Consulting</header>
-  <main><section>
-    <h1>Menu</h1>
-    <div class="container">
-      <div class="item">
-        <a href="./categories/outils/outils.html">Outils</a>
-      </div>
-      <div class="item">
-        <a href="./categories/framework/framework.html">Frameworks / Librairies</a>
-      </div>
-      <div class="item">
-        <a href="./categories/langage/langage.html">Langages de programmation</a>
-      </div>
-      <div class="item">
-        <a href="./categories/agile/agile.html">Agilité</a>
-      </div>
-      <div class="item">
-        <a href="./categories/pratique/pratique.html">Bonnes pratiques</a>
-      </div>
-    </div>
-  </section>
-    </section>
-  </main>
-</body>
+  <header class="title">
+    <p>PepITs Starter Pack</p>
+    <p class="sub-title">- Alltech Consulting -</p>
+  </header>
+  <main>
+    <!-- Début du groupement des catégories par grille -->
+    <div class="category-grid">
+      <!-- Catégorie Front -->
+      <section class="category-container">
+        <div class="category-header">
+          <div class="icon-circle"><i class="material-icons">display_settings</i></div>
+          <span class="category-title">Front</span>
+        </div>
+        <!-- Début du groupement de sous-catégories-->
+        <div class="item-grid">
+          <!-- sous-catégorie Angular -->
+          <a href="./categories/outils/angular.html" class="item">
+            <div class="card">
+              <img src="./ressources/images/angular-icon.png" alt="Angular">
+              <span>Angular</span>
+            </div>
+          </a>
+        </div>
+      </section>
 
-<footer>
-  <div class="link-content">
-    <div><a href="https://github.com/Alltech-Groupe/Doc4alltech" target= "_blank" rel="noopener noreferrer">Home Git</a></div>
-    <div><a href="https://www.alltechconsulting.fr/blog/" target= "_blank" rel="noopener noreferrer">Blog Alltech Consulting</a></div>
-    <a href= "https://www.alltechconsulting.fr/" target= "_blank" rel="noopener noreferrer"><img src="./ressources\images\logo-Alltech.png"></a>
-</footer>
+      <!-- Catégorie Back -->
+      <section class="category-container">
+        <div class="category-header">
+          <div class="icon-circle"><i class="material-icons">storage</i></div>
+          <span class="category-title">Back</span>
+        </div>
+        <div class="item-grid">
+        </div>
+      </section>
+
+      <!-- Catégorie Testing -->
+      <section class="category-container">
+        <div class="category-header">
+          <div class="icon-circle"><i class="material-icons">checklist</i></div>
+          <span class="category-title">Testing</span>
+        </div>
+        <div class="item-grid">
+        </div>
+      </section>
+
+      <!-- Catégorie Dev&Ops -->
+      <section class="category-container">
+        <div class="category-header">
+          <div class="icon-circle"><i class="material-icons">all_inclusive</i></div>
+          <span class="category-title">Dev&Ops</span>
+        </div>
+        <div class="item-grid">
+        </div>
+      </section>
+
+      <!-- Catégorie Bonnes pratiques -->
+      <section class="category-container">
+        <div class="category-header">
+          <div class="icon-circle"><i class="material-icons">thumb_up</i></div>
+          <span class="category-title">Bonnes pratiques</span>
+        </div>
+        <div class="item-grid">
+        </div>
+      </section>
+
+      <!-- Catégorie Design -->
+      <section class="category-container">
+        <div class="category-header">
+          <div class="icon-circle"><i class="material-icons">palette</i></div>
+          <span class="category-title">Design</span>
+        </div>
+        <div class="item-grid">
+        </div>
+      </section>
+
+      <!-- Catégorie Agilité -->
+      <section class="category-container">
+        <div class="category-header">
+          <div class="icon-circle"><i class="material-icons">groups_2</i></div>
+          <span class="category-title">Agilité</span>
+        </div>
+        <div class="item-grid">
+        </div>
+      </section>
+
+      <!-- Catégorie BI -->
+      <section class="category-container">
+        <div class="category-header">
+          <div class="icon-circle"><i class="material-icons">analytics</i></div>
+          <span class="category-title">Business Intelligence</span>
+        </div>
+        <div class="item-grid">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="link-content">
+      <div><a href="https://github.com/Alltech-Groupe/Doc4alltech" target="_blank" rel="noopener noreferrer">Home
+          Git</a></div>
+      <div><a href="https://www.alltechconsulting.fr/blog/" target="_blank" rel="noopener noreferrer">Blog Alltech
+          Consulting</a></div>
+      <a href="https://www.alltechconsulting.fr/" target="_blank" rel="noopener noreferrer"><img
+          src="./ressources\images\logo-Alltech.png" alt="logo-Alltech"></a>
+  </footer>
 </body>
 
 </html>

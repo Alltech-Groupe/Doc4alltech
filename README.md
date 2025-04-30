@@ -1,57 +1,148 @@
-<header>
+# 🚀 PepITs Starter Pack – Alltech Consulting
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
-
-# GitHub Pages
-
-_Create a site or blog from your GitHub repositories with GitHub Pages._
-
-</header>
-
-<!--
-  <<< Author notes: Finish >>>
-  Review what we learned, ask for feedback, provide next steps.
--->
-
-## Finish
-
-_Congratulations friend, you've completed this course!_
-
-<img src=https://octodex.github.com/images/constructocat2.jpg alt=celebrate width=300 align=right>
-
-Your blog is now live and has been deployed!
-
-Here's a recap of all the tasks you've accomplished in your repository:
-
-- You enabled GitHub Pages.
-- You selected a theme using the config file.
-- You learned about proper directory format and file naming conventions in Jekyll.
-- You created your first blog post with Jekyll!
-
-### What's next?
-
-- Keep working on your GitHub Pages site... we love seeing what you come up with!
-- We'd love to hear what you thought of this course [in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages).
-- [Take another GitHub Skills course](https://github.com/skills).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+_Bienvenue sur le dépôt du **Starter Pack PepITs**, une plateforme web simple, modulaire et responsive conçue pour organiser des ressources techniques par thématiques._
 
 ---
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+## 📐 Structure générale
 
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+Le projet repose sur une structure HTML/CSS simple et responsive.  
+La page principale contient :
 
-</footer>
+- Un **header fixe** avec le titre du projet.
+- Une **grille de catégories**, chaque catégorie représentant une thématique (ex : Front, Back, Testing…).
+- À l’intérieur de chaque catégorie, une **grille de sous-catégories**, affichées sous forme de cartes cliquables.
+- Un **footer** contenant des liens utiles.
+
+### 🗂️ Catégorie
+
+Chaque catégorie est définie par un bloc `<section class="category-container">`. Il contient :
+
+```html
+<section class="category-container">
+  <div class="category-header">
+    <div class="icon-circle">
+      <i class="material-icons">engineering</i>
+    </div>
+    <span class="category-title">Nom de la catégorie</span>
+  </div>
+  <div class="item-grid">
+    <!-- Sous-catégories ici -->
+  </div>
+</section>
+```
+Composants principaux :
+- category-container : le bloc global de la catégorie
+- category-header : le bandeau contenant le badge icône et le titre
+- icon-circle : un badge rond contenant une icône Material Icons
+- category-title : le titre de la catégorie
+- item-grid : la grille contenant les sous-catégories
+
+### 🔸 Sous-catégorie
+Chaque sous-catégorie est une carte cliquable composée d’un lien, d’une image illustrative et d’un titre :
+
+```html
+<a href="./categories/front/angular.html" class="item">
+  <div class="card">
+    <img src="./ressources/images/angular-icon.png" alt="Angular">
+    <span>Angular</span>
+  </div>
+</a>
+```
+Composants principaux :
+- a.item : lien vers la page de la sous-catégorie
+- .card : la carte visuelle contenant :
+- une image (img)
+- un titre (span)
+
+Chaque carte est responsive et peut inclure un effet de survol.
+
+## ➕ Contribuer
+### Ajouter une catégorie
+
+Les catégories sont structurées sous forme de sections HTML comme ci-dessous :
+
+```html
+<section class="category-container">
+  <div class="category-header">
+    <div class="icon-circle">
+      <i class="material-icons">engineering</i>
+    </div>
+    <span class="category-title">Nom de la catégorie</span>
+  </div>
+  <div class="item-grid">
+    <!-- Sous-catégories ici -->
+  </div>
+</section>
+```
+
+Pour ajouter une catégorie :
+
+- Copier une section existante.
+
+- Changer l’icône Material (voir plus bas).
+
+- Modifier le titre.
+
+- Ajouter des sous-catégories dans la item-grid.
+
+### Ajouter une sous-catégorie
+Les sous-catégories sont représentées par des cartes avec une image et un nom :
+
+```html
+<a href="./categories/front/angular.html" class="item">
+  <div class="card">
+    <img src="./ressources/images/angular-icon.png" alt="Angular">
+    <span>Angular</span>
+  </div>
+</a>
+```
+Il suffit d’ajouter ce type de bloc dans la item-grid correspondante.
+
+## 🎨 Utilisation de Material Icons
+Les icônes Material de Google sont utilisées pour illustrer chaque catégorie.
+Elles sont intégrées via ce lien dans le <head> :
+
+```html
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
+Et appelées ainsi :
+
+```html
+<i class="material-icons">palette</i>
+```
+🔗 Icônes disponibles ici : https://fonts.google.com/icons
+
+## 📁 Arborescence recommandée
+```css
+.
+├── index.html
+├── index.css
+├── ressources/
+│   ├── images/
+│   │   ├── angular-icon.png
+│   │   └── ...
+│   └── polices/
+│       └── Quicksand-Regular.ttf
+└── categories/
+    ├── front/
+    │   └── angular.html
+    ├── back/
+    └── ...
+```
+## 🤝 Contribuer
+Les contributions sont bienvenues !
+
+Vous pouvez :
+- Ajouter des catégories ou sous-catégories.
+- Améliorer le design ou le code CSS/HTML.
+- Corriger des erreurs ou proposer des idées.
+
+Pour contribuer :
+- Forkez ce dépôt
+- Créez une branche (git checkout -b nouvelle-fonctionnalite)
+- Commitez (git commit -m "Ajout nouvelle catégorie")
+- Poussez (git push origin nouvelle-fonctionnalite)
+- Créez une Pull Request
+
+Merci pour votre contribution au projet PepITs ! 🙌
