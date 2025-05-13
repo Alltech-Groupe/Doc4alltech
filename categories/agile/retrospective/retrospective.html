@@ -1,104 +1,161 @@
 <!DOCTYPE html>
-<html><head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Droid+Sans:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href=".\categories\agile\templateagile\retrospective.css">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Retrospective</title>
+    <link rel="stylesheet" href="retrospective.css">
     <link rel="stylesheet" href="..\..\..\index.css">
-<style></style></head>
-  <body>
-    <input type="checkbox" id="showPreview">
-    <div class="first-side">
-        <div class="cutter">
-        <div class="cut cut-top-left">&nbsp;</div>
-        <div class="cut cut-bottom-left">&nbsp;</div>
-        <div class="cut cut-top-right">&nbsp;</div>
-        <div class="cut cut-bottom-right">&nbsp;</div>
-    </div>
-<header>
-    <div class="home-button no-print">
-        <a href="../" title="back to home documentation"><i class="material-icons">home</i></a>
-        <label for="showPreview"><i class="material-icons">visibility</i></label>
-    </div>
-    <div class="header-center">
-        <div class="description-content">
-            <div class="title">Rétrospective</div> <!--change it according to the meeting-->
-            <div class="sub-title">Cérémonies Scrum</div>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="home-button">
+            <a href="../../../index.html" title="back to home"><i class="material-icons">home</i></a>
         </div>
-    </div>
-    <div class="logo-category no-print">
-        <i class="material-icons" onclick="window.print()">print</i>
-    </div>
-</header>
+        <div class="header-content">
+            <div class="title"> Rétrospective </div>
+            <div class="sub-title">Framework Scrum</div>
+        </div>
+    </header>
 
-<main>
-    <div>La rétrospective est la dernière cérémonie du sprint. Cet évenement permet à l'équipe de réfléchir à des pistes d'amélioration au niveau de la qualité et l'efficacité.
-        Il permet aussi d'examiner comment le dernier sprint s'est déroulé en ce qui concerne les individus, les interactions, les processus, les outils et leur DoD.</div>
-    <div class="column1">
-        <h1 id="durée--fréquence">Durée / Fréquence</h1>
-            <p><code>3 heures maximum pour une séance chaque mois.</code> </p> <!--add text according the duration and location of the meeting-->
-        <h1 id="objectifs">Objectifs</h1>
-            <p><code>
-            Améliorer la qualité et l'efficacité <br>
-            Bilan des actions précedentes <br>
-            Identifier les problèmes rencontrés/axes d'amélioration et les points positifs <br>
-            Recueillir les informations positifs et negatifs pendant le temps écoulé entre rétrospectives <br>
-            </code></p> <!--add text according to the objectifs-->
-        <h1 id="acteurs">Acteurs</h1>
-            <p><code>Toute l'équipe (Développeurs, Scrum Master, PO)</code></p> <!--add responsables and attendees-->
-        <h1 id="rôle-du-responsable">Rôle du responsable</h1>
-            <p><code> 
-            S'assurer que tout le monde parle <br>
-            Facilitateur <br>
-            Rendre le moment interactif et participatif <br>
-            Trouver le bon format adapté au besoin
-            </code></p> <!--add what the responsable must check-->
-        <h1 id="astuces">Astuces</h1>
-            <p><code>
-            Faire à tour tournant (chaque rétrospective un membre de l'équipe prendre le relais) <br>
-            Initialiser avec un energizer/icebreaker <br>
-            Revoir les actions précedentes <br>
-            Adapter/varier le type d'animation/format adapté au besoin <br>
-            Faire émerger les points d'amélioration <br>
-            Mesurer l'état d'esprit de l'équipe
-            </code></p> <!--add tips-->
-    </div>
-    <div class="column2">
-        <h1 id="entrants--sortants">Entrants</h1>
-            <p><code>
-            Actions précedentes <br>
-            Collecte d'information (problèmes rencontrés, solutions appliquées, améliorations, points positifs) <br>
-            </code></p> <!--add incomes -->
-        <h1 id="entrants--sortants">Sortants</h1>
-            <p><code>
-             Liste des changements/actions plus utiles pour améliorer son efficatité <br>
-             Plan d'actions priorisés et assignées <br>
-             Etat d'esprit (facultatif)
-            </code></p> <!--add outcomes-->
-        <h1 id="potentiels-problèmes--solutions">Potentiels problèmes / Solutions</h1>
-            <p><code>Charger l'équipe avec des nouvelles actions</code></p> <!--add problems that maybe encountered -->
-            <p>Prioriser les actions <br> 
-            Ajouter les actions les plus utiles au backlog du nouveau sprint </p> <!--add the solution to-->
-            <p><code>Ambiance</code></p> <!--add problems that maybe encountered -->
-            <p>Garder un clima beinveillant et factuel</p> <!--add the solution to-->
-    </div>
-</main>
+    <main>
+        <section>
+            <div class="container-section">
+                <div class="column">
+                    <h2>
+                        <pre><code>Objectifs</code></pre>
+                    </h2>
+                    <p class="corpsTexte"> 
+                        <strong>Améliorer en continu</strong>.
+                        Identifier ce qui a bien fonctionné, ce qui peut être amélioré, et définir des actions concrètes pour progresser à chaque sprint.</p>
+                    </p>
+                    <h2>
+                        <pre><code>Durée</code></pre>
+                    </h2>
+                    <p class="corpsTexte">Maximum 3 heures pour un sprint d'un mois.</p>
+                    <h2>
+                        <pre><code>Fréquence</code></pre>
+                    </h2>
+                    <p class="corpsTexte">Une fois à la fin de chaque sprint.</p>
+                    
+                    <h2>
+                        <pre><code>Acteurs</code></pre>
+                    </h2>
+                    <p class="corpsTexte">
+                        <strong>Toute l'équipe</strong>
+                        PO, Dev Team, Scrum Master </p>
+                    <h2>
+                        <pre><code>Rôles</code></pre>
+                    </h2>
+                    <p class="corpsTexte"><strong>Scrum Master :</strong> Facilite, garantir l'équipe et le respect du temps.</p>
+                    <p class="corpsTexte"><strong>Toute l'équipe :</strong> Participe activement, propose, s'engage sur les actions.</p>
+                    <h2>
+                        <pre><code>Outils</code></pre>
+                    </h2>
+                    <p class="corpsTexte"><strong>Tableau blanc</strong> (physique ou digital)</p>
+                    <p class="corpsTexte"><strong>Post-its</strong> (physique ou virtuel)</p>    
+                    <p class="corpsTexte"><strong>Outils en ligne</strong> FunRetro, EasyRetro, Miro, MetroRetro, Parabol</p>    
+                    <h2>
+                        <pre><code></code></pre>
+                    </h2>
+                    <p><img class="sketchnote" src="../../../ressources\images\retrospective.png"></p>
+                                       
+                </div>
+                <div class="column">
+                    <h2>
+                        <pre><code>Structure</code></pre>
+                    </h2>
+                    <p class="corpsTexte">
+                        <strong>Préparer l'ambiance :</strong>
+                        Icebreaker, météo d'équipe, check-in rapide.
+                    <p class="corpsTexte">
+                        <strong>Collecter les données :</strong>
+                        Post-its, tableaux, outils digitaux, recueil des faits marquants.
+                    <p class="corpsTexte">
+                        <strong>Générer des idées :</strong>
+                        Discussions, votes, priorisation des sujets à traiter.
+                    <p class="corpsTexte">
+                        <strong>Décider des actions :</strong>
+                        Définir 1 à 3 actions concrètes, assigner des responsables.
+                    <p class="corpsTexte"><strong>Clore la séance :</strong>
+                        Feedback rapide sur la rétro, remerciements.
+                    </p>
+                    <h2>
+                        <pre><code>Techniques Populaires</code></pre>
+                    </h2>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Technique</th>
+                                <th>Description</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Start / Stop / Continue</td>
+                                <td>Ce qu'on commence, arrête, continue</td>
+                            </tr>
+                            <tr>
+                                <td>Glad / Sad / Mad</td>
+                                <td>Ce qui a plu, déplu, agacé</td>
+                            </tr>
+                            <tr>
+                                <td>4Ls</td>
+                                <td>Liked, Learned, Lacked, Longed For</td>
+                            </tr>
+                            <tr>
+                                <td>Speed Boat</td>
+                                <td>Freins et moteurs de l'équipe</td>
+                            </tr>
+                            <tr>
+                                <td>Sailboat</td>
+                                <td>Forces, obstacles, risques, objectifs</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    <h2>
+                        <pre><code>Potentiels Problèmes/Solutions</code></pre>
+                    </h2>
+                    <p class="corpsTexte">
+                        <b>Surcharge de l'équipe</b><br>
+                        <i>Prendre uniquement les actions concretes et les plus impactantes et définir sont nombre selon la capacité de l'équipe.</i>
+                    </p>
+                    <p class="corpsTexte">
+                        <b>Ambiance</b><br>
+                        <i>Garder un clima bienveillant et factuel.</i>
+                    </p>                   
+                    <h2>
+                        <pre><code>Idées/Astuces</code></pre>
+                    </h2>
+                    <p class="corpsTexte">
+                        Favoriser l'écoute active et la bienveillance
+                    <p class="corpsTexte">
+                        Se concentrer sur les processus, pas sur les personnes
+                    <p class="corpsTexte">    
+                        Limiter le nombre d'actions à suivre
+                    <p class="corpsTexte">    
+                        Varier les formats pour garder l'engagement
+                    <p class="corpsTexte">    
+                        Suivre les actions décidées au sprint suivant
+                    </p>
+                </div>
+            </div>
+        </section>
 
-</header>
+    </main>
+    <footer>
+        <div class="link-content">
+            <div><a href="https://github.com/Alltech-Groupe/Doc4alltech" target="_blank" rel="noopener noreferrer">Home
+                    Git</a></div>
+            <div><a href="https://www.alltechconsulting.fr/blog/" target="_blank" rel="noopener noreferrer">Blog Alltech
+                    Consulting</a></div>
+            <a href="https://www.alltechconsulting.fr/" target="_blank" rel="noopener noreferrer"><img
+                    src="../../../ressources\images\logo-Alltech.png"></a>
+        </div>
+        </div>
+    </footer>
+</body>
 
-<main>
-    <img class="sketchnote" src=".\ressources\images\retrospective.png"> <!--add image for meeting-->
-</main>
-        
-<footer class="@@class">
-  <div><a href="https://github.com/Alltech-Groupe/Doc4alltech" target= "_blank" rel="noopener noreferrer">Home</a></div>
-  <div><a href="https://www.alltechconsulting.fr/" target= "_blank" rel="noopener noreferrer">alltechconsulting.fr</a></div>
-  <div><a href="#">contact : communauteagile@alltechconsulting.fr</a>
-    <img src="..\images\logo-Alltech.png">
-  </div>
-</footer>
-
-<!--   <script src="../common/lib/highlight.pack.js"></script>
-    <script src="../common/script.js"></script>--> 
-  
-
-</body></html>
+</html>
