@@ -1,118 +1,108 @@
 <!DOCTYPE html>
-<html><head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Droid+Sans:700" rel="stylesheet">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Daily</title>
+    <link rel="stylesheet" href="daily.css">
+    <link rel="stylesheet" href="..\..\..\index.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./daily.css">
-    <!--<link rel="stylesheet" href="../common/lib/atom-one-light.css">
-    <link rel="stylesheet" href="./dailymeeting.css">-->
-  <style></style></head>
-  <body>
-    <input type="checkbox" id="showPreview">
-    <div class="first-side">
-      <div class="cutter">
-<div class="cut cut-top-left">&nbsp;</div>
-<div class="cut cut-bottom-left">&nbsp;</div>
-<div class="cut cut-top-right">&nbsp;</div>
-<div class="cut cut-bottom-right">&nbsp;</div>
-</div>
-<header>
-    <div class="home-button no-print">
-        <a href="../" title="back to home cheat Sheet"><i class="material-icons">home</i></a>
-        <label for="showPreview"><i class="material-icons">visibility</i></label>
-    </div>
-    <div class="header-center">
-        <div class="description-content">
-            <div class="title">Daily Meeting</div>
-            <div class="sub-title">Cérémonies Scrum</div>
+</head>
+
+<body>
+    <header>
+        <div class="home-button">
+            <a href="../../../index.html" title="back to home"><i class="material-icons">home</i></a>
         </div>
-
-        <div class="logo-container">
-            <img src="..\images\routine.png">
+        <div class="header-content">
+            <div class="title"> Daily Meeting</div>
+            <div class="sub-title">Framework Scrum</div>
         </div>
-    </div>
-    <div class="logo-category no-print">
-        <i class="material-icons" onclick="window.print()">print</i>
-    </div>
-</header>
+    </header>
 
-<main>
-    <div>Le but de cet événement est d'inspecter la progression vers l'Objectif du Sprint et d'adapter le Sprint Backlog si nécessaire, en ajustant le travail planifié à venir.​</div>
-    <div class="column1">
-        <h1 id="durée--fréquence">Durée / Fréquence</h1>
-        <p> TOUS LES JOURS à la même heure et même endroit ~15 min - Commence à l'heure, finit à l'heure</p>
-        <p>Une fois par jour</p>
-        <h1 id="objectifs">Objectifs</h1>
-        <p><code>Focus sur le respect de l'objectif du sprint</code>
-        <code>Synchronisation de l'équipe</code></p>
-        <h1 id="acteurs">Acteurs</h1>
-        <p><code>Scrum Master</code>
-        <code>Équipe</code>
-        <code>Product Owner (optionnel)</code></p>
-        <h1 id="rôle-du-scrum-master">Rôle du Scrum master</h1>
-        <p><code>Veiller au respect du timing</code>
-        <code>Bien identifier les blocages</code>
-        <code>S'assurer que chaque équipier prend la parole</code></p>
-        <h1 id="déroulé">Déroulé</h1>
-        <p> Chacun son tour, debout, devant le board</p>
-        <p><code>Ce que j'ai fait hier</code>
-        <code>Ce que je vais faire</code>
-        <code>Quels problèmes ai-je rencontrés , quelqu'un peut-il m'aider ?</code></p>
-    </div>
-    <div class="column2">
-        <h1 id="entrants--sortants">Entrants / sortants</h1>
-        <p><code>Board lisible</code>
-        <code>Chaque membre de l'équipe prépare son intervention</code>
-        <code>Burndown à jour</code></p>
-        <h1 id="potentiels-problèmes--solutions">Potentiels problèmes / solutions</h1>
-        <p><code>Discussions trop longues</code></p>
-        <p>Est-ce que ça intéresse tout le monde ?</p>
-        <p><code>Problèmes cachés</code></p>
-        <p>Respecter les 3 questions du déroulé</p>
-        <p><code>1 personne présente mais ne dit rien</code>
-        <code>1 personne parle de sujets hors projet</code></p>
-        <p>Ne pas essayer de résoudre tous les problèmes pendant le Daily Meeting</p>
-        <p><code>Respect des horaires</code>
-        <code>S'assurer que chaque équipier s'adresse au reste de l'équipe</code></p>
-        <h1 id="idées">Idées</h1>
-        <p><code>Utiliser un totem de parole</code>
-        <code>Vérifier l'intégration continue / autres indicateurs</code>
-        <code>Des gages pour les personnes en retard</code></p>
+    <main>
+        <section>
+            <div class="container-section">
+                <div class="column">
+                    <h2>
+                        <pre><code></code></pre>
+                    </h2>
+                    <p><img class="sketchnote" src="../../../ressources\images\daily-meeting.png"></p>
+                    <h2>
+                        <pre><code>Objectifs</code></pre>
+                    </h2>
+                    <p class="corpsTexte"><strong>Le Daily Scrum appartient à l'équipe. Utilise-le pour avancer ensemble, pas pour contrôler !</strong></p>
+                    <p class="corpsTexte">Synchroniser l'équipe</p>
+                    <p class="corpsTexte">Identifier les obstacles</p>
+                    <p class="corpsTexte">Adapter le Sprint Backlog (si besoin)</p>
+                    <p class="corpsTexte">Favoriser la transparence</p>
+                    <h2>
+                        <pre><code>Durée</code></pre>
+                    </h2>
+                    <p class="corpsTexte">15 minutes</p>
+                    <h2>
+                        <pre><code>Fréquence</code></pre>
+                    </h2>
+                    <p class="corpsTexte">Tous les jours à la même heure</p>
+                    
+                    <h2>
+                        <pre><code>Acteurs</code></pre>
+                    </h2>
+                    <p class="corpsTexte">
+                        <strong>L'équipe de Développement</strong>
+                        Le Scrum Master et le PO peuvent participer si travaillent activement sur des éléments du Sprint Backlog </p>
+                    <h2>
+                        <pre><code>Rôles</code></pre>
+                    </h2>
+                    <p class="corpsTexte"><strong>Equipe Développement :</strong> Peuvent choisir la structure et les techniques qu'ils souhaitent, tant que leur progression ne compromette pas l'Objectif du Sprint et un plan d'action pour la journée de travail est définit. Cela permet de se focaliser et d'améliorer l'autogestion.</p>
+               </div>
+                <div class="column">
+                    <h2>
+                        <pre><code>Outils</code></pre>
+                    </h2>
+                    <p class="corpsTexte"><strong>Tableau physique :</strong> post-its, magnets</p>
+                    <p class="corpsTexte"><strong>Tableau numérique :</strong> Jira, Trello, Miro</p>    
+                    <p class="corpsTexte"><strong>Timer : </strong> pour respecter la durée.</p>    
+                    <h2>
+                        <pre><code>Bonnes Pratiques</code></pre>
+                    </h2>
+                    <p class="corpsTexte"><strong>Rester debout</strong> : Encourage la concision ;</p>
+                    <p class="corpsTexte"><strong>Respecter le temps</strong> : 15 minutes, pas de digressions ;</p>
+                    <p class="corpsTexte"><strong>Focus sur l'Objectif du Sprint</strong> : Parler des tâches du Sprint en cours ;</p>
+                    <p class="corpsTexte"><strong>Problèmes complexes</strong> : Les laisser pour après le Daily ("parking lot")</p>
+                    <p class="corpsTexte"><strong>Tableau Scrum/Kanban</strong> : S'appuyer visuellement sur le board</p>
+                    <h2>
+                        <pre><code>Astuces pour un daily efficace</code></pre>
+                    </h2>
+                    <p class="corpsTexte">Même heure et même lieu</p>
+                    <p class="corpsTexte">Chacun s'exprime, pas de reporting (au PO et/ou Scrum Master)</p>
+                    <p class="corpsTexte">Encourager la collaboration</p>
+                    <p class="corpsTexte">Mettre à jour le board à temps réel</p>
+                    <p class="corpsTexte">Lister les obstacles pour action immédiate</p>
+                    <h2>
+                        <pre><code>Anti-Patterns à éviter</code></pre>
+                    </h2>
+                    <p class="corpsTexte">Faire du Daily un reporting au chef ;
+                    <p class="corpsTexte">Dépasser les 15 minutes ;
+                    <p class="corpsTexte">Résoudre les problèmes techniques pendant le Daily ;
+                    <p class="corpsTexte">Laisser certains membres monopoliser la parole ;    
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    </div>
-</main>
+    </main>
+    <footer>
+        <div class="link-content">
+            <div><a href="https://github.com/Alltech-Groupe/Doc4alltech" target="_blank" rel="noopener noreferrer">Home
+                    Git</a></div>
+            <div><a href="https://www.alltechconsulting.fr/blog/" target="_blank" rel="noopener noreferrer">Blog Alltech
+                    Consulting</a></div>
+            <a href="https://www.alltechconsulting.fr/" target="_blank" rel="noopener noreferrer"><img
+                    src="../../../ressources\images\logo-Alltech.png"></a>
+        </div>
+        </div>
+    </footer>
+</body>
 
-      <footer class="print-only">
-  <a href="https://groupe-sii.github.io/cheat-sheets">groupe-sii.github.io/cheat-sheets</a>
-  <a href="https://sii-group.com">sii-group.com</a>
-  <a href="#">contact : agilite-ouest@sii.fr</a>
-  <img src="../assets/images/logoSII-white.svg">
-</footer>
-
-
-    </div>
-
-    <hr class="no-print">
-
-    <div class="reverse">
-      <div class="landscape">
-        <header class="print-only">
-</header>
-
-        <main>
-          <img class="sketchnote" src="../assets/images/daily-meeting.png">
-        </main>
-        <footer class="@@class">
-  <a href="https://groupe-sii.github.io/cheat-sheets">groupe-sii.github.io/cheat-sheets</a>
-  <a href="https://sii-group.com">sii-group.com</a>
-  <a href="#">contact : agilite-ouest@sii.fr</a>
-  <img src="../assets/images/logoSII-white.svg">
-</footer>
-
-      </div>
-    </div>
-
-    <script src="../common/lib/highlight.pack.js"></script>
-    <script src="../common/script.js"></script>
-  
-
-</body></html>
+</html>
