@@ -1,0 +1,16 @@
+ul{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1em;
+    white-space: normal;
+    margin-left: 0px;  
+}
+code {
+    display: block;
+    white-space: wrap;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 0px;
+    overflow-x: auto;
+    font-size: 1em;
+    font-family:'Courier New', Courier, monospace;  
+  }
