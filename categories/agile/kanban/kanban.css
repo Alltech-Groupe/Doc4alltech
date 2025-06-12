@@ -1,52 +1,6 @@
-  
-  table {
-    margin: 10px 10px;
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 700px;
-    background: #fff;
-  }
-  th, td {
-    padding: 5px 5px;
-    border-bottom: 1px solid #acadad;
-    text-align: left;
-   }
-  th {
-    background: black;
-    color: white;
-    font-size: 1em;
-    letter-spacing: 1px;
-  }
-  td{
-    font-family:'Courier New', Courier, monospace;
-    font-size: 0.8em;
-  }
-  tr:last-child td {
-    border-bottom: 1px solid #acadad;
-  }
-  @media (max-width: 100px) {
-    table, th, td {
-      font-size: 0.95em;
-      width: 100%;
-    }
-    body {
-      margin: 10px;
-      
-    }
-  }
-
-ul{
-    font-family:'Courier New', Courier, monospace;
-    font-size: 1em;
-    white-space: normal;
-    margin-left: 10px;  
-}
-
 .centered-kanban{
-  height: 10%;
-  width: 10%;
-  padding: 0px;
-  margin: 0px 0px 0px 0px;
-  max-width: min-content;
-  max-height: min-content;
-}
+  height: 8%;
+  width: 8%;
+  padding: 10px;
+  display: flex;
+ }
