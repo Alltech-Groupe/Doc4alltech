@@ -9,9 +9,11 @@
 </head>
 
 <body>
-  <header class="title">
-    <p>PepITs Starter Pack</p>
-    <p class="sub-title">- Alltech Consulting -</p>
+  <header>
+    <div class="header-content">
+      <div class="title">PepITs Starter Pack</div>
+      <div class="sub-title">- Alltech Consulting -</div>
+    </div>
   </header>
   <main>
     <!-- Début du groupement des catégories par grille -->
@@ -25,12 +27,14 @@
         <!-- Début du groupement de sous-catégories-->
         <div class="item-grid">
           <!-- sous-catégorie Angular -->
-          <a href="./categories/outils/angular.html" class="item">
-            <div class="card">
-              <img src="./ressources/images/angular-icon.png" alt="Angular">
-              <span>Angular</span>
-            </div>
-          </a>
+           <div class="sub-grid">
+            <a href="./categories/front/angular.html" class="item">
+              <div class="card">
+                <img src="./ressources/images/angular-icon.png" alt="Angular">
+                <span>Angular</span>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -41,6 +45,8 @@
           <span class="category-title">Back</span>
         </div>
         <div class="item-grid">
+          <div class="sub-grid">
+          </div>
         </div>
       </section>
 
@@ -51,6 +57,8 @@
           <span class="category-title">Testing</span>
         </div>
         <div class="item-grid">
+          <div class="sub-grid">
+          </div>
         </div>
       </section>
 
@@ -61,6 +69,8 @@
           <span class="category-title">Dev&Ops</span>
         </div>
         <div class="item-grid">
+           <div class="sub-grid">
+          </div>
         </div>
       </section>
 
@@ -71,6 +81,8 @@
           <span class="category-title">Base de données</span>
         </div>
         <div class="item-grid">
+           <div class="sub-grid">
+          </div>
         </div>
       </section>
 
@@ -81,16 +93,20 @@
           <span class="category-title">Bonnes pratiques</span>
         </div>
         <div class="item-grid">
+           <div class="sub-grid">
+          </div>
         </div>
       </section>
 
-      <!-- Catégorie Design -->
+      <!-- Catégorie UI/UX Design -->
       <section class="category-container">
         <div class="category-header">
           <div class="icon-circle"><i class="material-icons">palette</i></div>
-          <span class="category-title">Design</span>
+          <span class="category-title">UI/UX Design</span>
         </div>
         <div class="item-grid">
+           <div class="sub-grid">
+          </div>
         </div>
       </section>
 
@@ -101,8 +117,80 @@
           <span class="category-title">Agilité</span>
         </div>
         <div class="item-grid">
+          <div class="sub-grid">
+            <!-- sous-catégorie Scrum -->
+            <a href="./categories\agile\scrum\scrum.html" class="item">
+              <div class="card">
+                <img src="./ressources/images/Scrum1.png" alt="Scrum">
+                <span>Scrum</span>
+              </div>
+            </a>
+          </div>
+          <div class="sub-grid">
+            <!-- sous-catégorie Kanban -->
+            <a href="./categories\agile\kanban\kanban.html" class="item">
+              <div class="card">
+                <img src="./ressources/images/kanban1.png" alt="Kanban">
+                <span>Kanban</span>
+              </div>
+            </a>
+          </div>
+          <div class="sub-grid">
+            <!-- sous-catégorie Accelerate -->
+            <a href="./categories\agile\accelerate\accelerate.html" class="item">
+              <div class="card">
+                <img src="./ressources/images/accelerate1.png" alt="Accelerate">
+                <span>Accelerate</span>
+              </div>
+            </a>
+          </div>
+          <div class="sub-grid">
+            <!-- sous-catégorie Daily -->
+            <a href="./categories\agile\safe\safe.html" class="item">
+              <div class="card">
+                <img src="./ressources/images/safe1.png" alt="SAFe">
+                <span>SAFe</span>
+              </div>
+            </a>
+          </div>
+          <div class="sub-grid">
+            <!-- sous-catégorie Daily -->
+            <a href="./categories\agile\daily\daily.html" class="item">
+              <div class="card">
+                <img src="./ressources/images/daily1.png" alt="Daily">
+                <span>Daily Meeting</span>
+              </div>
+            </a>
+          </div>
+          <div class="sub-grid">
+            <!-- sous-catégorie Sprint Planning -->
+            <a href="./categories\agile\planning\planning.html" class="item">
+              <div class="card">
+                <img src="./ressources\images\planning1.png" alt="Planning">
+                <span>Sprint Planning</span>
+              </div>
+            </a>
+          </div>
+          <div class="sub-grid">
+            <!-- sous-catégorie Review -->
+            <a href=".\categories\agile\review\review.html" class="item">
+              <div class="card">
+                <img src="./ressources/images/review1.png" alt="Review">
+                <span>Sprint Review</span>
+              </div>
+            </a>
+          </div>
+          <div class="sub-grid">
+            <!-- sous-catégorie Retrospective -->
+            <a href="./categories\agile\retrospective\retrospective.html" class="item">
+              <div class="card">
+                <img src="./ressources/images/teamretro.png" alt="Retrospective">
+                <span> Rétrospective</span>
+              </div>
+            </a>
+          </div>
         </div>
-      </section>
+        </section>
 
       <!-- Catégorie BI -->
       <section class="category-container">
@@ -111,6 +199,8 @@
           <span class="category-title">Business Intelligence</span>
         </div>
         <div class="item-grid">
+           <div class="sub-grid">
+          </div>
         </div>
       </section>
     </div>

@@ -57,7 +57,6 @@ body .img-item img {
 }
 body .title {
   margin: 5px 0 0 0;
-  color: var(--alltechLightGold);
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -68,10 +67,6 @@ body .title {
 body .title p {
   margin: 0; /* enlève les marges par défaut des <p> */
   line-height: 1.2; /* contrôle l'espacement vertical du texte */
-}
-body .sub-title{
-  font-size: 0.7em;
-  color: var(--alltechDarkGold);
 }
 body main {
   display: flex;
@@ -149,28 +144,36 @@ body main section h1 i {
 .category-header .category-title {
   z-index: 1;
 }
+
 .item-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 50px;
   justify-items: center;
-  padding: 1em 0;
+  /*display: flex;
+  flex-wrap: wrap;*/
+  padding: 10px 5px 10px 5px;
 }
-@media (max-width: 600px) {
+.sub-grid{
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: repeat(3, 1fr);
+}
+/*@media (max-width: 600px) {
   .item-grid {
     grid-template-columns: 1fr;
   }
 }
 @media (min-width: 601px) and (max-width: 900px) {
   .item-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 901px) {
-  .item-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+/*@media (min-width: 901px) {
+  .item-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}*/
 .item {
   text-decoration: none;
   color: inherit;
@@ -269,4 +272,162 @@ body footer img {
   height: 40px;
   max-width: 100px;
   object-fit: contain;
+}
+
+body header .home-button {
+  margin: 0.5em;
+  color: white;
+}
+body header .home-button a {
+  color: white;
+}
+body header .home-button i {
+  font-size: 50px;
+  color: white;
+}
+body header .header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+}
+body header .header-content > div {
+  width: 100%;
+  text-align: center;
+}
+body header .header-content .title {
+  text-transform: none;
+  font-size: 1.5em;
+  flex: 2;
+}
+body header .header-content .sub-title {
+  flex: 3;
+  font-size: 1em;
+}
+
+
+
+.title{
+color:white;
+}
+
+body main {
+  text-align: 0;
+}
+
+hr{
+  border: none;
+  height: 2px;
+  background-color: var(--alltechLightGold);
+  margin: 0px 0;
+}
+
+ body main .introduction-section{
+  text-align: left;
+  display: flex;
+  gap: 0px; /* space between columns */
+  padding: 1px;  
+}
+
+body main .container-section {
+  text-align: left;
+  display: flex;
+  gap: 10px; /* space between columns */
+  padding: 0px;
+}
+
+.column {
+  flex: 1; /* equal width */
+  background-color: white;
+  padding: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: 1px solid white;
+}
+
+h2 {
+  color: #333;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+p.corpsTexte {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1em;
+  white-space: normal;
+  margin-left: 10px;
+}
+
+pre code {
+  display: block;
+  white-space: wrap;
+  /*background-color: #f5e8cf;*/
+  background-color: var(--alltechLightGold);
+  color: white;
+  /*opacity: 0.3;*/
+  padding: 8px;
+  border-radius: 1px;
+  overflow-x: auto;  
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+    margin: 10px 10px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+  }
+th, td {
+    padding: 5px 5px;
+    border-bottom: 1px solid #acadad;
+    text-align: left;
+   }
+th {
+    background: black;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+td{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 0.8em;
+  }
+tr:last-child td {
+    border-bottom: 1px solid #acadad;
+  }
+@media (max-width: 100px) {
+    table, th, td {
+      font-size: 0.95em;
+      width: 100%;
+    }
+    body {
+      margin: 10px; 
+    }
+  }
+
+ul{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1em;
+    white-space: normal;
+    margin-left: 0px;  
+}
+
+body main .sketchnote {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  max-width: min-content;
+  max-height: min-content;
 }
