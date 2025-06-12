@@ -1,47 +1,16 @@
-table {
-    margin: 10px 10px;
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 700px;
-    background: #fff;
-  }
-  th, td {
-    padding: 5px 5px;
-    border-bottom: 1px solid #acadad;
-    text-align: left;
-   }
-  th {
-    background: black;
-    color: white;
-    font-size: 1em;
-    letter-spacing: 1px;
-  }
-  td{
-    font-family:'Courier New', Courier, monospace;
-    font-size: 0.8em;
-  }
-  tr:last-child td {
-    border-bottom: 1px solid #acadad;
-  }
-  @media (max-width: 100px) {
-    table, th, td {
-      font-size: 0.95em;
-      width: 100%;
-    }
-    body {
-      margin: 10px;
-      
-    }
-  }
-ul{
-    font-family:'Courier New', Courier, monospace;
-    font-size: 1em;
-    white-space: normal;
-    margin-left: 0px;  
-}
 
-body .centered-scrum{
+body .scheme-scrum{
+  height: 20%;
   padding: 5px;
   margin: 0px 0px 0px 0px;
-  display: center;
+  display: flex;
+  justify-content: center;
 }
+
+body .piliers{
+  padding: 5px;
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+
