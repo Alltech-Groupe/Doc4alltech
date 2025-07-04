@@ -2,6 +2,8 @@
 
 _Bienvenue sur le dépôt du **Starter Pack PepITs**, une plateforme web simple, modulaire et responsive conçue pour organiser des ressources techniques par thématiques._
 
+https://alltech-groupe.github.io/Doc4alltech/
+
 ---
 
 ## 📐 Structure générale
