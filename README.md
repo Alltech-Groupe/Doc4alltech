@@ -27,7 +27,9 @@ Chaque catégorie est définie par un bloc `<section class="category-container">
     <span class="category-title">Nom de la catégorie</span>
   </div>
   <div class="item-grid">
-    <!-- Sous-catégories ici -->
+    <div class="sub-grid">
+      <!-- Sous-catégories ici -->
+    </div>
   </div>
 </section>
 ```
@@ -37,6 +39,7 @@ Composants principaux :
 - icon-circle : un badge rond contenant une icône Material Icons
 - category-title : le titre de la catégorie
 - item-grid : la grille contenant les sous-catégories
+- sub-grid : le cellule contenant la sous-catégorie qui seront dispersés dans la grille
 
 ### 🔸 Sous-catégorie
 Chaque sous-catégorie est une carte cliquable composée d’un lien, d’une image illustrative et d’un titre :
@@ -44,16 +47,16 @@ Chaque sous-catégorie est une carte cliquable composée d’un lien, d’une im
 ```html
 <a href="./categories/front/angular.html" class="item">
   <div class="card">
-    <img src="./ressources/images/angular-icon.png" alt="Angular">
-    <span>Angular</span>
+    <img src="./ressources/images/angular-icon.png" alt="sous-cetegorie">
+    <span>Sous-Categorie</span>
   </div>
 </a>
 ```
 Composants principaux :
 - a.item : lien vers la page de la sous-catégorie
 - .card : la carte visuelle contenant :
-- une image (img)
-- un titre (span)
+  - une image (img)
+  - un titre (span)
 
 Chaque carte est responsive et peut inclure un effet de survol.
 
@@ -71,7 +74,9 @@ Les catégories sont structurées sous forme de sections HTML comme ci-dessous :
     <span class="category-title">Nom de la catégorie</span>
   </div>
   <div class="item-grid">
-    <!-- Sous-catégories ici -->
+    <div class="sub-grid">
+      <!-- Sous-catégories ici -->
+    </div>
   </div>
 </section>
 ```
@@ -97,7 +102,7 @@ Les sous-catégories sont représentées par des cartes avec une image et un nom
   </div>
 </a>
 ```
-Il suffit d’ajouter ce type de bloc dans la item-grid correspondante.
+Il suffit d’ajouter ce type de bloc dans la sub-grid correspondante.
 
 ## 🎨 Utilisation de Material Icons
 Les icônes Material de Google sont utilisées pour illustrer chaque catégorie.
@@ -130,6 +135,47 @@ Et appelées ainsi :
     ├── back/
     └── ...
 ```
+
+## 📎 Structure des Pages Secondaires
+
+Les pages secondaires sont des webpages dédiées au contenu de chaque carte utilisant le format style "GIT CHEAT SHEET".
+
+Chaque page contient :
+
+- Un **header fixe** avec le titre de la sous-catégorie, sous-titre de la catégorie et un lien "home" pour le retour à page d'accueil.
+- 2 columns dans lequelles contienent des box qui répresentent les principales caractéristiques pour mieux comprendre le sujet (ex : Définition, Caractéristiques, Bonnes Pratiques d'utilisation, tips, etc).
+- Un **footer** contenant des liens utiles.
+
+### Utilisation des Schémas, Tables, Images
+Des tables, schémas et images sont bienvenus.
+_ _Tables__
+```html
+<table>
+  <thead>
+      <tr>
+        <th>header1</th>
+        <th>header2</th>                   
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>row1-content X</td>
+        <td>row1-content Y</td>
+      </tr>
+      <tr>
+        <td>row2-content X</td>
+        <td>row2-content Y</td>
+      </tr>
+  </tbody>
+</table>
+```
+_ _Schémas/Images__
+```html
+<div class="sketch">
+  <img  src="../../../ressources\images\scketch.png">
+</div>
+```
+
 ## 🤝 Contribuer
 Les contributions sont bienvenues !
 
