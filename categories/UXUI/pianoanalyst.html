@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Piano Analytics</title>
+    <link rel="stylesheet" href="pianoanalyst.css">
+    <link rel="stylesheet" href="..\..\..\index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Prism.js CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
+    <!-- Prism.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+    <!-- Langage HTML support -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markup.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="home-button">
+            <a href="../../index.html" title="back to home"><i class="material-icons">home</i></a>
+        </div>
+        <div class="header-content">
+            <div class="title">Piano Analytics</div>
+            <div class="sub-title">Analyse Comportementale UX</div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container-section">
+                <div class="column">
+                    <h2>
+                        <pre><code>Définition</code></pre>
+                    </h2>
+                    <p class="corpsTexte">Piano Analytics est une plateforme d'analyse digitale développée par Piano (ex-AT Internet). Elle permet aux entreprises de mesurer, analyser et activer la donnée comportementale de leurs utilisateurs sur les sites web, applications mobiles et objets connectés, dans un cadre 100 % RGPD-compliant.</p>
+                    
+                    <h2>
+                        <pre><code>Objectifs</code></pre>
+                    </h2>
+                    <p class="corpsTexte"><b>Mesurer le trafic :</b> pages vues, clics, conversions, entonnoirs, rebonds…</p>
+                    <p class="corpsTexte"><b>Comprendre les comportements :</b> segmentation fine, parcours utilisateurs, points de friction</p>
+                    <p class="corpsTexte"><b>Optimiser la performance :</b> données e-commerce, KPI marketing, attribution multicanale</p>
+                    <p class="corpsTexte"><b>Respecter la vie privée :</b>données first-party, tracking hybride (opt-in, opt-out, exempt)</p>
+                    <h2>
+                       <pre><code>Implementation</code></pre>
+                    </h2>
+                    <p class="corpsTexte"><b>A)</b>Tagging léger ("instant tracking")</p>
+                     <div class="code-container">
+                            <button class="copy-btn" onclick="copyCode()">Copier</button>
+                            <pre><code id="code-to-copy" class="language-js">
+html
+                                
+  (function(_cfg){
+    var s = document.createElement("script");
+    s.src = "https://tag.aticdn.net/piano-analytics.js";
+    s.async = true; s.crossorigin = "anonymous";
+    s.dataset.config = JSON.stringify(_cfg);
+    document.head.appendChild(s);
+  })({
+    site: 123456789,
+    collectDomain: "https://xxx.pa-cd.com",
+    instantTracking: true
+  });
+                            </code></pre>
+                            <p class="note"> &rarr; Tracking de base immédiat</p>
+                     </div>
+                        <script>
+                            function copyCode() {
+                            const code = document.getElementById('code-block').innerText;
+                            navigator.clipboard.writeText(code).then(() => {
+                                alert("Code copié !");
+                            }, () => {
+                                alert("Erreur lors de la copie.");
+                            });
+                            }
+                        </script>                    
+                    
+                    <p class="corpsTexte"><b>B)</b>Envoyer un événement "page.display"</p>
+                     <div class="code-container">
+                            <button class="copy-btn" onclick="copyCode()">Copier</button>
+                            <pre><code id="code-to-copy" class="language-js">
+js
+
+pa.sendEvent("page.display", {
+  page: "Accueil",
+  page_chapter1: "Cat1",
+  page_chapter2: "Cat2",
+  page_chapter3: "Cat3"
+});
+                            </code></pre>
+                            <p class="note"> &rarr; Événement + 4 propriétés contextuelles</p>
+                     </div>
+                        <script>
+                            function copyCode() {
+                            const code = document.getElementById('code-block').innerText;
+                            navigator.clipboard.writeText(code).then(() => {
+                                alert("Code copié !");
+                            }, () => {
+                                alert("Erreur lors de la copie.");
+                            });
+                            }
+                        </script>                    
+                    
+                    <p class="corpsTexte"><b>C)</b>Envoyer un événement de clic</p>
+                     <div class="code-container">
+                            <button class="copy-btn" onclick="copyCode()">Copier</button>
+                            <pre><code id="code-to-copy" class="language-js">
+js
+
+pa.sendEvent("click.navigation", {
+  click: "CTA Acheter",
+  click_chapter1: "...",
+  click_chapter2: "...",
+  click_chapter3: "...",
+  page: "Produit"
+});
+                            </code></pre>
+                            <p class="note"> &rarr; 5 propriétés incluant la page d'origine</p>
+                     </div>
+                        <script>
+                            function copyCode() {
+                            const code = document.getElementById('code-block').innerText;
+                            navigator.clipboard.writeText(code).then(() => {
+                                alert("Code copié !");
+                            }, () => {
+                                alert("Erreur lors de la copie.");
+                            });
+                            }
+                        </script>                    
+                </div>
+                <div class="column">
+
+                    <h2>
+                        <pre><code>Modèle de Données</code></pre>
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Elément</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Evénements</b></td>
+                                <td>page.display, click.navigation, transaction.*</td>
+                            </tr>
+                            <tr>
+                                <td><b>Standard props</b></td>
+                                <td>> 70 événements, ~ 450 propriétés prédéfinies</td>
+                            </tr>
+                            <tr>
+                                <td><b>Custom props</b></td>
+                                <td>Props définies par l'usager, actives/inactives, visibles/cachées</td>
+                            </tr>
+                            <tr>
+                                <td><b>Processed props</b></td>
+                                <td>Envoyées dans le payload, dispo immédiatement </td>
+                            </tr>
+                            <tr>
+                                <td><b>Calculated props</b></td>
+                                <td>Calculées en back-end, non envoyées dans le payload initial</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>
+                        <pre><code>Measurements (données enrichies)</code></pre>
+                    </h2>
+                    <ul>
+                        <li><b>Usage :</b> ajouter contexte (ex. nombre d'abonnés Facebook par jour)</li>
+                        <li><b>Caractéristiques :</b> numérique, temporel, agrégé</li>
+                        <li><b>Enrichissement :</b> propriétés additionnelles (ex. météo → température, bulletin)</li>
+                        <li><b>Analyse :</b> disponibles dans Explorer, Data Query, Workspaces (pas dans Data Flow)</li>
+                    </ul>
+                    <h2>
+                        <pre><code>Analyse & Extraction de données</code></pre>
+                    </h2>
+                    <ul>
+                        <li><b>Data Query :</b> outil graphique / no-code pour créer segments/datasets/rapports</li>
+                        <li><b>Data Mining :</b> machine learning intégré, API, activation export</li>
+                        <li><b>E-commerce :</b> indicateurs transactionnels (CA, ARPPU, durée panier…)</li>
+                    </ul>
+                    <h2>
+                        <pre><code>Débug & QA</code></pre>
+                    </h2>
+                    <ul>
+                        <li><b>Network Tab :</b> vérifiez les hits #xiti ou #vtag et le status 200</li>
+                        <li><b>Tag Inspector :</b> extension Chrome pour visualiser événements/propriétés</li>
+                        <li><b>Stream Inspector :</b> outil via Piano UI > Data Collection Portal > Outils</li>
+                    </ul>
+                    <h2>
+                        <pre><code>Résumé visuel</code></pre>
+                    </h2>
+                    <div class="code-container">
+                            <button class="copy-btn" onclick="copyCode()">Copier</button>
+                            <pre><code id="code-to-copy" class="language-js">
+css
+                                
+[ Tagging ]
+  ▼ pa.sendEvent(event, props)
+    ├── Standard props
+    └── Custom props
+
+[ Data Model ]
+  ├── Events (>70)
+  ├── Processed Props
+  └── Calculated Props
+
+[ Measurements ]
+  ► Import numérique+temporel + contexte
+
+[ Analyse ]
+  ► Explorer / Data Query → segments, rapports
+  ► Data Mining → ML, export
+
+[ QA ]
+  ► network / Tag Inspector / Stream Inspector
+
+                            </code></pre>
+                     </div>
+                        <script>
+                            function copyCode() {
+                            const code = document.getElementById('code-block').innerText;
+                            navigator.clipboard.writeText(code).then(() => {
+                                alert("Code copié !");
+                            }, () => {
+                                alert("Erreur lors de la copie.");
+                            });
+                            }
+                        </script>                    
+                    <h2>
+                        <pre><code>Astuces</code></pre>
+                    </h2>
+                        <p class="corpsTexte"><b>1. </b>Kick-off : taggage léger + page.display</p>
+                        <p class="corpsTexte"><b>2. </b>Ajoutez des événements clés (clics, transactions…)</p>
+                        <p class="corpsTexte"><b>3. </b>Utilisez Measurements pour enrichir vos analyses</p>
+                        <p class="corpsTexte"><b>4. </b>Analysez via Data Query et Data Mining</p>
+                        <p class="corpsTexte"><b>5. </b>Testez : utilisez le debug réseau + Tag Inspector</p>
+                    
+                    <h2>
+                        <pre><code>Ressources</code></pre>
+                    </h2>
+                    <p class="corpsTexte"><a href="https://www.piano.io/product/analytics" target="_blank" rel="noopener noreferrer">Piano.io</a></p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="link-content">
+            <div><a href="https://github.com/Alltech-Groupe/Doc4alltech" target="_blank" rel="noopener noreferrer">Home
+                    Git</a></div>
+            <div><a href="https://www.alltechconsulting.fr/blog/" target="_blank" rel="noopener noreferrer">Blog Alltech
+                    Consulting</a></div>
+            <a href="https://www.alltechconsulting.fr/" target="_blank" rel="noopener noreferrer"><img
+                    src="../../../ressources\images\logo-Alltech.png"></a>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
