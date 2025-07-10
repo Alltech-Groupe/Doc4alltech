@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Accessibilité&Inclusivité</title>
+    <link rel="stylesheet" href="access_inclus.css">
+    <link rel="stylesheet" href="..\..\..\index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Prism.js CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
+    <!-- Prism.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+    <!-- Langage HTML support -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markup.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="home-button">
+            <a href="../../index.html" title="back to home"><i class="material-icons">home</i></a>
+        </div>
+        <div class="header-content">
+            <div class="title">Accessibilité & Inclusivité</div>
+            <div class="sub-title"></div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container-section">
+                <div class="column">
+                    <h2>
+                        <pre><code>Définition</code></pre>
+                    </h2>
+                    <p class="corpsTexte"><b>L'accessibilité numérique</b>  vise à rendre les sites et applications utilisables par toutes les personnes, y compris celles en situation de handicap (visuel, auditif, moteur, cognitif…). <b>L'inclusivité</b>, quant à elle, va plus loin : elle cherche à concevoir des expériences qui respectent la diversité des usages, des cultures, des genres et des capacités.
+                    En UX/UI, cela signifie penser pour tous dès la conception : garantir que l'interface soit navigable au clavier, que les contrastes soient lisibles, que les images aient un texte alternatif, que les mots choisis soient inclusifs et clairs, etc.</p>
+                    
+                    <h2>
+                        <pre><code>Principes clés</code></pre>
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Principe</th>
+                                <th>Signification</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Perceptible</b></td>
+                                <td>L'information doit être visible, audible ou lisible</td>
+                            </tr>
+                            <tr>
+                                <td><b>Utilisable</b></td>
+                                <td>L'interface doit être navigable au clavier ou écran</td>
+                            </tr>
+                            <tr>
+                                <td><b>Compréhensible</b></td>
+                                <td>Le contenu et la navigation doivent être clairs</td>
+                            </tr>
+                            <tr>
+                                <td><b>Robuste</b></td>
+                                <td>Compatible avec tous types de technologies d'assistance</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+            
+                    <h2>
+                       <pre><code>Couleurs & Constrastes</code></pre>
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Régle</th>
+                                <th>A respecter</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Contraste texte / fond</td>
+                                <td>Ratio ≥ 4.5:1 (WCAG AA)</td>
+                            </tr>
+                            <tr>
+                                <td>Pas seulement la couleur</td>
+                                <td>Ex: pas juste rouge = erreur</td>
+                            </tr>
+                            <tr>
+                                <td>Simulateurs daltonisme</td>
+                                <td>Utiles : Stark, Color Oracle, devtools</td>
+                            </tr>
+                            <tr>
+                                <td>Palettes inclusives</td>
+                                <td>Utiliser des bleus, violets, verts lisibles</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>
+                        <pre><code>Navigation Clavier</code></pre>
+                    </h2> 
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Test Rapide</th>
+                                <th>Bonnes Pratiques</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tab / Shift+Tab = focus visible ?</td>
+                                <td>Utiliser :focus-visible, éviter outline: none</td>
+                            </tr>
+                            <tr>
+                                <td>Ordre logique des éléments</td>
+                                <td>L'ordre du DOM doit suivre le sens de lecture</td>
+                            </tr>
+                            <tr>
+                                <td>Boutons & liens interactifs</td>
+                                <td>Jamais sur des <div> ou <span> uniquement</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>
+                        <pre><code>Reponsive & Mobile</code></pre>
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Inclusivité mobile</th>
+                                <th>Bonnes pratiques</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Zones cliquables ≥ 44x44px</td>
+                                <td>Recommandé par Apple/Google</td>
+                            </tr>
+                            <tr>
+                                <td>Pas de texte trop petit</td>
+                                <td>Taille min. 16px pour le corps</td>
+                            </tr>
+                            <tr>
+                                <td>Zoom activé</td>
+                                <td>Ne pas désactiver le zoom (user-scalable=no)</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                   
+                </div>
+
+                <div class="column">
+                    <h2>
+                        <pre><code>Multilingue & Inclusivité</code></pre>
+                    </h2>
+                    <p class="corpsTexte"><b>Bonnes Pratiques linguistiques</b></p>
+                    <ul>
+                        <li>Genre neutre ou inclusif : “Étudiant·e·s”, “Vous” au lieu de “il”</li>
+                        <li>Spécification de la langue en HTML correct : html <code> lang="fr"</code> ou <code>lang="en"</code></li>
+                        <li>Pas de jargon technique sans contexte :	Ajouter infobulles ou explication</li>
+                    </ul>
+
+                    <h2>
+                        <pre><code>Tests & Outils</code></pre>
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Outils de vérification</th>
+                                <th>Fonction</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://wave.webaim.org/">WAVE (plugin)</a></td>
+                                <td>Analyse visuelle d'accessibilité d'une page</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.deque.com/axe/devtools">axe Devtools</a></td>
+                                <td>Extension Chrome/Firefox pour détecter les erreurs</td>
+                            </tr>
+                            <tr>
+                                <td><b>VoiceOver / NVDA / TalkBack</b></td>
+                                <td>Tests réels avec lecteurs d'écran</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://developer.chrome.com/docs/lighthouse/">Lighthouse</a></td>
+                                <td>Audit rapide intégré dans Chrome (accessibilité, performance)</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://colororacle.org">Color Oracle</a></td>
+                                <td>Simulateur de daltonisme multiplateforme</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.getstark.co/">Stark</a></td>
+                                <td>Plugin pour Figma, Sketch, Adobe XD, VS Code</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>
+                        <pre><code>À faire dès maintenant</code></pre>
+                    </h2>
+                    <div class="code-container">
+                            <button class="copy-btn" onclick="copyCode()">Copier</button>
+                            <pre><code id="code-to-copy" class="language-js">
+css
+                                
+✔ Vérifier les contrastes
+✔ Naviguer au clavier
+✔ Ajouter des labels aux champs
+✔ Simuler un lecteur d'écran
+✔ Utiliser des composants HTML natifs
+
+                            </code></pre>
+                     </div>
+                        <script>
+                            function copyCode() {
+                            const code = document.getElementById('code-block').innerText;
+                            navigator.clipboard.writeText(code).then(() => {
+                                alert("Code copié !");
+                            }, () => {
+                                alert("Erreur lors de la copie.");
+                            });
+                            }
+                        </script>                    
+                    <h2>
+                        <pre><code>Ressources</code></pre>
+                    </h2>
+                    <p class="corpsTexte">Normes & Référentiels officiels</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ressource</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a heref="https://www.w3.org/WAI/WCAG22/quickref/">WCAG 2.2 (W3C)</a></td>
+                                <td>Le standard international d'accessibilité (Web Content Accessibility Guidelines)</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://accessibilite.numerique.gouv.fr/">RGAA (France)</a></td>
+                                <td>Référentiel officiel français (très utilisé dans le secteur public) </td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.ada.gov/">ADA (USA)</a></td>
+                                <td>Loi américaine sur les droits des personnes handicapées</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="corpsTexte">Guides Pratiques & Formations</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Guide/Ressource</th>
+                                <th>Ce que tu y trouves</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://uxdesign.cc/accessibility-for-designers-a-cheat-sheet-75f9e0e2f9e2">Accessibility for Designers (UX Collective)</a></td>
+                                <td>Cheat sheet design-oriented</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.microsoft.com/design/inclusive/">Microsoft Inclusive Design]</a></td>
+                                <td>Approche inclusive centrée sur l'humain</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://m3.material.io/foundations/accessibility/overview">Google Material Accessibility</a></td>
+                                <td>Recommandations d'accessibilité pour les UI Android </td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://inclusive-components.design/">Inclusive Components (Heydon Pickering)</a></td>
+                                <td>Composants HTML accessibles bien expliqués</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="link-content">
+            <div><a href="https://github.com/Alltech-Groupe/Doc4alltech" target="_blank" rel="noopener noreferrer">Home
+                    Git</a></div>
+            <div><a href="https://www.alltechconsulting.fr/blog/" target="_blank" rel="noopener noreferrer">Blog Alltech
+                    Consulting</a></div>
+            <a href="https://www.alltechconsulting.fr/" target="_blank" rel="noopener noreferrer"><img
+                    src="../../../ressources\images\logo-Alltech.png"></a>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
