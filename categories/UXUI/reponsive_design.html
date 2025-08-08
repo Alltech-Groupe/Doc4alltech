@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Design</title>
+    <!--<link rel="stylesheet" href="pianoanalyst.css">-->
+    <link rel="stylesheet" href="..\..\..\index.css">
+    <link rel="stylesheet" href="./categories\UXUI\reponsive_design.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Prism.js CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
+    <!-- Prism.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+    <!-- Langage HTML support -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markup.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="home-button">
+            <a href="../../index.html" title="back to home"><i class="material-icons">home</i></a>
+        </div>
+        <div class="header-content">
+            <div class="title">Responsive Design</div>
+            <div class="sub-title"></div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container-section">
+                <div class="column">
+                    <h2>
+                        <pre><code>Définition</code></pre>
+                    </h2>
+                    <p class="corpsTexte">Le Responsive Design (ou design réactif) est une approche de conception web qui permet à un site ou une application de s'adapter automatiquement à la taille de l'écran sur lequel il est affiché : smartphone, tablette, ordinateur portable ou écran large. L'objectif est d'offrir une expérience utilisateur optimale quelle que soit la résolution, sans avoir besoin de créer plusieurs versions du site. Pour cela, il utilise des grilles fluides, des images adaptatives, des unités flexibles et des media queries CSS qui ajustent dynamiquement la mise en page et les styles.</p>
+                    
+                    <h2>
+                        <pre><code>Objectifs</code></pre>
+                    </h2>
+                    <p class="corpsTexte"><b>Accessibilité universelle :</b> Offrir une expérience cohérente et fluide sur tous types d'appareils (mobiles, tablettes, ordinateurs, TV…).</p>
+                    <p class="corpsTexte"><b>Mobile-first :</b> Concevoir d'abord pour les petits écrans, puis ajuster pour les écrans plus larges (approche mobile-first).</p>
+                    <p class="corpsTexte"><b>Adaptabilité automatique :</b> Adapter layout, typographie, images et contenus à la taille de l'écran sans intervention de l'utilisateur.</p>
+                    <p class="corpsTexte"><b>Performance optimisée :</b>Charger des éléments adaptés à chaque appareil (ex. : images légères sur mobile) pour améliorer vitesse et efficacité.</p>
+                    <p class="corpsTexte"><b>Expérience utilisateur (UX) constante :</b> Maintenir une navigation intuitive et fluide, quel que soit le terminal utilisé.</p>
+                    <p class="corpsTexte"><b>Maintenance simplifiée :</b>Un seul site à gérer, au lieu de versions séparées pour mobile et desktop.</p>
+
+                    <h2>
+                       <pre><code>Principes de bases</code></pre>
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Concept</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Responsive Design</b></td>
+                                <td>Technique permettant à un site de s'adapter à toutes tailles d'écran.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Mobile First</b></td>
+                                <td>Approche qui commence par le design mobile, puis ajoute les styles desktop.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Fluid Grid</b></td>
+                                <td>Mise en page en pourcentages plutôt qu'en pixels fixes.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Flexbox / Grid</b></td>
+                                <td>Systèmes de layout flexibles et puissants.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Media Queries</b></td>
+                                <td>Règles CSS conditionnelles selon la taille de l'écran.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Breakpoints</b></td>
+                                <td>Seuils où le layout change (souvent à 480px, 768px, 1024px…).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>
+                        <pre><code>Media Queries</code></pre>
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Exemples</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>min-width</code></td>
+                                <td><code>@media (min-width: 768px)</code></td>
+                                <td>style si écran plus large que 768px</td>
+                            </tr>
+                            <tr>
+                                <td><code>max-width</code></td>
+                                <td><code>@media (max-width: 767px)</code></td>
+                                <td>style si écran plus petit que 768px</td>
+                            </tr>
+                            <tr>
+                                <td><code>orientation</code></td>
+                                <td><code>@media (orientation: landscape)</code></td>
+                                <td>pour définir mode paysage</td>
+                            </tr>
+                            <tr>
+                                <td><code>hover</code>, <code>pointer</code></td>
+                                <td><code>@media (hover: hover)</code></td>
+                                <td>style si la souris est détectée</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p class="corpsTexte"><i>Exemple</i></p>
+                     <div class="code-container">
+                            <button class="copy-btn" onclick="copyCode()">Copier</button>
+                            <pre><code id="code-to-copy" class="language-js">
+css
+
+/* Syntaxe de base */
+@media (min-width: 768px) {
+  /* styles pour écrans ≥ 768px */
+}
+                            </code></pre>
+                     </div>
+                        <script>
+                            function copyCode() {
+                            const code = document.getElementById('code-block').innerText;
+                            navigator.clipboard.writeText(code).then(() => {
+                                alert("Code copié !");
+                            }, () => {
+                                alert("Erreur lors de la copie.");
+                            });
+                            }
+                        </script>
+<h2>
+                        <pre><code>Unités Responsives</code></pre>
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Unité</th>
+                                <th>Utilisation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>%</code></td>
+                                <td>Pourcentage par rapport au parent</td>
+                            </tr>
+                            <tr>
+                                <td><code>vw</code>, <code>vh</code></td>
+                                <td>Viewport Width / Height</td>
+                            </tr>
+                            <tr>
+                                <td><code>em</code>, <code>rem</code></td>
+                                <td>Échelle relative (texte & marges)</td>
+                            </tr>
+                            <tr>
+                                <td><code>fr</code></td>
+                                <td>Fraction d'espace (CSS Grid)</td>
+                            </tr>
+                            <tr>
+                                <td><code>Clam()</code></td>
+                                <td>Valeur fluide avec limites</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="code-container">
+                            <button class="copy-btn" onclick="copyCode()">Copier</button>
+                            <pre><code id="code-to-copy" class="language-js">
+css
+                                
+font-size: clamp(1rem, 2vw, 2rem);
+
+                            </code></pre>
+                     </div>
+                        <script>
+                            function copyCode() {
+                            const code = document.getElementById('code-block').innerText;
+                            navigator.clipboard.writeText(code).then(() => {
+                                alert("Code copié !");
+                            }, () => {
+                                alert("Erreur lors de la copie.");
+                            });
+                            }
+                        </script>                                       
+              
+                </div>
+                <div class="column">
+                    <h2>
+                        <pre><code>Outils CSS Modernes</code></pre>
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Outil</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>flexbox</code></td>
+                                <td><code>display: flex;</code>pour layout flexible</td>
+                            </tr>
+                            <tr>
+                                <td><code>grid</code></td>
+                                <td><code>display: grid;</code>pour layout en grille</td>
+                            </tr>
+                            <tr>
+                                <td><code>aspect-ratio</code></td>
+                                <td>Maintenir les proportions d'un élément</td>
+                            </tr>
+                            <tr>
+                                <td><code>container queries</code></td>
+                                <td>Responsive basé sur la taille du conteneur (nouveau)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>
+                        <pre><code>Breakpoints fréquents à adapter</code></pre>
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Appareil</th>
+                                <th> Min-width (px) </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mobile (portrait)</td>
+                                <td>320</td>
+                            </tr>
+                            <tr>
+                                <td>Mobile (landscape) </td>
+                                <td>480</td>
+                            </tr>
+                            <tr>
+                                <td>Tablette</td>
+                                <td>768</td>
+                            </tr>
+                            <tr>
+                                <td>Ordinateur portable</td>
+                                <td>102</td>
+                            </tr>
+                            <tr>
+                                <td>Desktop HD</td>
+                                <td>1280+</td>
+                            </tr>
+                        </tbody>
+                    </table>
+ 
+                    <h2>
+                        <pre><code>Commandes/Techniques de Debug</code></pre>
+                    </h2>
+                    <ul>
+                        <li><b>Redimensionner navigateur :</b> vérifier le comportement du site en temps réel</li>
+                        <li><b>Inspecteur d'éléments :</b> simuler différentes résolutions et devices dans un IDE</li>
+                        <li><b>Mobile Device Testing :</b> Tester avec des vrais mobiles/tablettes pour la validation finale</li>
+                    </ul>
+                    <h2>
+                        <pre><code>Bonnes Pratiques</code></pre>
+                    </h2>
+                    <ul>
+                        <li><b>Adopter une approche mobile-first :</b> commencez la conception pour les appareils mobiles avant ceux de bureau.</li>
+                        <li><b>Créer des grilles et images fluides.</b></li>
+                        <li><b>Prioriser l'utilisation de graphiques vectoriels évolutifs (SVG) :</b> un format basé sur XML pour les graphiques 2D, qui prend en charge l'interactivité et les animations.</li>
+                        <li><b>Inclure trois points de rupture ou plus</b> (layouts pour au moins trois types d'appareils).</li>
+                        <li><b>Prioriser et masquer le contenu selon le contexte d'utilisation des utilisateurs.</b> Vérifiez votre hiérarchie visuelle et utilisez la divulgation progressive et les tiroirs de navigation pour montrer d'abord les éléments essentiels. Gardez les éléments non essentiels (agréables mais pas indispensables) en second plan.</li>
+                        <li><b>Visez le minimalisme.</b></li>
+                        <li><b>Utilisez des modèles de conception</b> pour faciliter l'usage et accélérer la familiarisation (par exemple, le modèle de chute de colonnes permet d'adapter le contenu à plusieurs types d'écrans).</li>
+                        <li><b>Visez l'accessibilité.</b></li>
+                    </ul>
+                    <h2>
+                        <pre><code>Ressources</code></pre>
+                    </h2>
+                    <p class="corpsTexte"><a href="https://www.interaction-design.org/literature/article/responsive-design-let-the-device-do-the-work" target="_blank" rel="noopener noreferrer">Interaction Design Foundation</a></p>
+                    <p class="corpsTexte"> <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" target="_blank" rel="noopener noreferrer">Resources for Developers, by Developers_</a></p>
+                    <p class="corpsTexte"> <a href="https://nmqdigital.com/blog/responsive-design-essentials-key-principles-and-best-practices" target="_blank" rel="noopener noreferrer">nMQ Digital</a></p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="link-content">
+            <div><a href="https://github.com/Alltech-Groupe/Doc4alltech" target="_blank" rel="noopener noreferrer">Home
+                    Git</a></div>
+            <div><a href="https://www.alltechconsulting.fr/blog/" target="_blank" rel="noopener noreferrer">Blog Alltech
+                    Consulting</a></div>
+            <a href="https://www.alltechconsulting.fr/" target="_blank" rel="noopener noreferrer"><img
+                    src="../../../ressources\images\logo-Alltech.png"></a>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
